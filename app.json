@@ -4,6 +4,7 @@
     "slug": "project1",
     "version": "1.0.0",
     "orientation": "portrait",
+    "permissions": [],
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
@@ -11,11 +12,16 @@
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
+      
     },
     "ios": {
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to the camera to scan QR codes.",
       "supportsTablet": true
+      
     },
     "android": {
+      "permissions": ["CAMERA"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -40,5 +46,6 @@
     "experiments": {
       "typedRoutes": true
     }
+  }
   }
 }
