@@ -8,7 +8,6 @@ import MobileVerification from "./app/MobileVerification";
 import Fetch_Horly from "./app/Fetch_Horly";
 import { RootStackNavigatorParamList } from './app/navigation/types';
 import OTPVerification from "./app/OTPVerification"
-import NextFiveDaysScreen from "./app/NextFiveDaysScreen"
 import Welcome from "./app/Welcome";
 import FiveDaysScreen from "./app/FiveDaysScreen";
 import ForecastDetails from "./app/ForecastDetails";
@@ -34,7 +33,6 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="UserLogin">
       <Stack.Screen name="Welcome" component={Welcome} />
-      <Stack.Screen name="NextFiveDaysScreen" component={NextFiveDaysScreen} />
         <Stack.Screen name="QRScanner" component={QRScanner} />
         <Stack.Screen name="Manuel_QRScanner" component={Manuel_QRScanner} />
         <Stack.Screen name="index" component={index} />
