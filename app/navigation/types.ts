@@ -4,9 +4,15 @@ import type { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 
 export type RootStackNavigatorParamList = {
-    QRScanner: undefined; // ScreenOne does not expect any parameters
+    QRScanner: undefined; 
     MobileVerification: undefined; 
-    Fetch_Horly: undefined;// ScreenTwo does not expect any parameters
+    Fetch_Horly: undefined;
+    OTPVerification:{ phoneNumber: string; otp: number };
+    Welcome: undefined;
+    NextFiveDaysScreen: undefined;
+    DayDetailsScreen: { selectedDay: any[]; day: string };
+    FiveDaysScreen: undefined;
+   
   };
 
   export type RootScreenNavigationProp = NativeStackScreenProps<
@@ -14,4 +20,9 @@ export type RootStackNavigatorParamList = {
   QRScanner,
   MobileVerification,
   Fetch_Horly,
+  OTPVerification,
+  Welcome,
+  NextFiveDaysScreen,
+  DayDetailsScreen,
+  FiveDaysScreen
   >;
